@@ -1,0 +1,51 @@
+
+.login-wrapper, .login-wrapper *{
+	transition: all 0.5s ease;
+	font-size:12px;
+}
+
+.login-wrapper{
+	box-shadow:2px 2px 5px #ccc;
+	margin:20px auto;
+	max-width:600px;
+}
+
+.login-form, .registration-form{
+	border:1px solid #dee2e6;
+	border-top:0;
+	padding:20px;
+	
+}
+
+.login-wrapper .nav-item{
+	width:50%;
+}
+
+.show{
+	display:block;
+}
+
+.hide{
+	display:none;
+}
+
+
+.spin{
+  animation-name:effect;
+  animation-duration: 0.5s;
+  
+}
+
+@keyframes effect{
+	0%{
+		transform:rotateY(0deg);
+		filter:blur(0);
+	}
+	50%{
+		filter:blur(6px);	
+	}
+	100%{
+		transform:rotateY(360deg);
+		filter:blur(0);
+	}
+}
